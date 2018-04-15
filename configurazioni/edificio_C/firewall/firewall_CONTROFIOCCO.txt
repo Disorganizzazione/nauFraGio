@@ -1,0 +1,40 @@
+# Configurazione del Firewall per il
+# router CONTROFIOCCO
+
+# clear all
+iptables -F
+
+# prevenzione IP spoofing: vengono cancellati i pacchetti con sorgente diverso dalla rete corrente
+iptables -A FORWARD -s  !192.168.0.0 -j DROP
+
+## INT. Router
+
+# Pacchetti da rete interna 
+# (Specificata come ogni interfaccia diversa dalla eth0 quella verso CIRCUMNAVIGANTE)
+iptables -A FORWARD -p tcp -dport 80 -i !eth0 -j ACCEPT 		# HTTP
+iptables -A FORWARD -p tcp -dport 25 -i !eth0 -j ACCEPT 		# SMTP
+iptables -A FORWARD -p tcp -dport 110 -i !eth0 -j ACCEPT		# POP3
+iptables -A FORWARD -p tcp -dport 143 -i !eth0 -j ACCEPT		# IMAP
+iptables -A FORWARD -p tcp -dport 53 -i !eth0 -j ACCEPT		# DNS
+iptables -A FORWARD -p tcp -dport 8080 -i !eth0 -j ACCEPT	# Proxy
+
+# Pacchetti HTTP provenienti dal Server Proxy
+iptables -A FORWARD -m state --state ESTABILISHED,RELATED -p tcp -dport 80 -i eth0 -s 192.168.1.2  -j ACCEPT
+
+# Pacchetti SMTP da parte del Server di posta
+iptables -A FORWARD -m state --state ESTABILISHED,RELATED -p tcp -dport 25 -i eth0 -s  192.168.1.5  -j ACCEPT
+
+# Pacchetti POP3 provenienti dal Server di posta
+iptables -A FORWARD -m state --state ESTABILISHED,RELATED -p tcp -dport 110 -i eth0 -s 192.168.1.5  -j ACCEPT
+
+# Pacchetti IMAP provenienti dal Server di posta
+iptables -A FORWARD -m state --state ESTABILISHED,RELATED -p tcp -dport 143 -i eth0 -s 192.168.1.5  -j ACCEPT
+
+# Pacchetti provenienti da connessioni già stabilite
+iptables -A INPUT -m state --state ESTABLISHED,RELATED -j ACCEPT
+
+# Evita le richieste 3 way handshake in corso
+iptables -A INPUT -p tcp -j REJECT --reject-with tcp-reset
+
+# Accetta in output tutti i pacchetti di connessioni gia stabilite
+iptables -A OUTPUT -m state --state ESTABLISHED,RELATED -j ACCEPT
