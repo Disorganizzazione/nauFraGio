@@ -1,0 +1,17 @@
+$ttl 86400
+$origin 1.168.192.in-addr.arpa.
+@   	IN  	SOA   dns.naufragioline.it	amministratore(
+            	2014051701 	; Serial   
+            	86400  	; Refresh  
+            	3600   		; Retry    
+            	604800 	; Expire   
+            	86400  	; Minimum  
+            	)
+
+   	 IN  	NS  	dns.naufragioline.it.
+   	 IN  	MX  	mail.naufragioline.it.
+
+2	IN 	PTR	proxy.naufragioline.it.
+3	IN 	PTR	web.naufragioline.it.
+4	IN 	PTR	dns.naufragioline.it.
+5   	IN  	PTR 	mail.naufragioline.it.
