@@ -1,7 +1,7 @@
 # configurazione interfaccia di rete
 # ECOSCANDAGLIO di Esule (edificio E)
 
-#Interfaccia -TRAMITE PONTE RADIO-verso i router CONTROFIOCCO (edificio C) e DERIVA (edificio D)
+#Interfaccia <ponte radio> verso CONTROFIOCCO (edificio C) e DERIVA (edificio D)
 ifconfig eth0 192.168.77.1 netmask 255.255.255.0 broadcast 192.168.77.255 
 
 #Interfaccia verso sottorete 1

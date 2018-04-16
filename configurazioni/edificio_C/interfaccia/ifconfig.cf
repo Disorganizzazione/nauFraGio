@@ -1,10 +1,10 @@
-# Configurazione dell’interfaccia di rete
-# dell' Edificio D (Dritta)
+# Configurazione dell'interfaccia di rete
+# di Carena (edificio C)
 
 ## Ext. Router - Firewall: CIRCUMNAVIGANTE
 
 #Interfaccia verso Internet
-ifconfig eth0 45.17.23.11 netmask 255.255.255.0 broadcast 45.17.23.255 #TODO: controllare valori
+ifconfig eth0 78.4.240.30 netmask 255.255.255.0 broadcast 78.4.240.255
 
 #Interfaccia verso router interno CONTROFIOCCO
 ifconfig eth1 192.168.1.6 netmask 255.255.255.0 broadcast 192.168.1.255 
@@ -35,7 +35,7 @@ ifconfig eth5 192.168.102.1 netmask 255.255.255.0 broadcast 192.168.102.255
 ifconfig eth6 192.168.103.1 netmask 255.255.255.0 broadcast 192.168.103.255
 
 
-#  SOTTORETE-1  DMZ(I SERVER)! # TODO!
+#  sottorete 1 - Sotterraneo (DMZ) # TODO!
 
 # PROXY "proxy"
 
