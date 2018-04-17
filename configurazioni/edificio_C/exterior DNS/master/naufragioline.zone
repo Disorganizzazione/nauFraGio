@@ -1,0 +1,23 @@
+; naufragioline
+$TTL 86400
+naufragioline. IN     SOA    a.root-servers.net. FraB@naufragioline.it. (
+				2018041601  ; Serial
+				3H          ; refresh after 3 hours
+				1H          ; retry after 1 hour
+				1W          ; expire after 1 week
+				1D)         ; minimum TTL of 1 day
+
+	; Name Server
+	IN	NS	a.root-servers.net.	; DNS esterno (anycast)
+	IN	NS	b.root-servers.net.	; DNS interno
+
+	; Mail Exchanger
+	IN	MX	50 mail.naufragioline.it.	; Mail Server
+
+naufragioline.			IN A		192.168.1.1
+www			IN CNAME		192.168.1.1
+
+; Resource Record - veryfy the IP where your mails come from(disable if not needed)
+; @	IN TXT		"v=spf1 ip4:85.214.123.0/24 -all"
+
+; EOF

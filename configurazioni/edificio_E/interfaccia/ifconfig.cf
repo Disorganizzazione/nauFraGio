@@ -1,0 +1,29 @@
+# configurazione interfaccia di rete
+# ECOSCANDAGLIO di Esule (edificio E)
+
+#Interfaccia <ponte radio> verso CONTROFIOCCO (edificio C) e DERIVA (edificio D)
+ifconfig eth0 192.168.77.1 netmask 255.255.255.0 broadcast 192.168.77.255 
+
+#Interfaccia verso sottorete 1
+ifconfig eth1 192.168.13.1 netmask 255.255.255.0 broadcast 192.168.13.255 
+
+#Interfaccia verso sottorete 2
+ifconfig eth2 192.168.14.1 netmask 255.255.255.0 broadcast 192.168.14.255 
+
+# SOTTORETE 1 (192.168.13.x) con 25 host
+ifconfig eth0 192.168.13.2 netmask 255.255.255.0 broadcast 192.168.13.255 #Host_1
+.
+.
+.
+ifconfig eth0 192.168.13.26 netmask 255.255.255.0 broadcast 192.168.13.255 #Host_25
+
+
+# SOTTORETE 2 (192.168.14.x) con 25 host
+ifconfig eth0 192.168.14.2 netmask 255.255.255.0 broadcast 192.168.14.255 #Host_1
+.
+.
+.
+ifconfig eth0 192.168.14.26 netmask 255.255.255.0 broadcast 192.168.14.255 #Host_25
+
+
+

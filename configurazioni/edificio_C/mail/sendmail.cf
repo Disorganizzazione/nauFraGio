@@ -1,0 +1,60 @@
+# File di riferimento:
+/etc/sendmail.cf
+
+# DEFINIZIONE MACRO UTENTE
+Dwmail                                          # hostname
+DDnaufragioline.it                              # dominio
+Dj$w.$D                                         # nome del dominio ufficiale del sito
+De$j Sendmail $v ready at $                     # messaggio iniziale SMTP
+DlFrom $g $d                                    # formato della UNIX from line
+DnMAILER-DAEMON                                 # nome usato nei messaggi d'errore
+Do.:%\@!^=/                                     # operatori negli indirizzi
+Dq$g$?x ($x)$.                                  # formato dell'indirizzo di default del mittente
+
+# TRUSTED USERS (possono cambiare l'indirizzo del mittente)
+Troot
+Tdaemon
+Tuucp
+
+# PRIORITA' (valori standard)
+Pfirst-class=0
+Pspecial-delivery=100
+Pbulk=-60
+Pjunk=-100
+
+# OPZIONI
+OA/etc/alias	                                # path del file aliases
+OErrorHeader=/etc/sendmail.oE
+OF0600                                          # permessi file temporanei
+OHman=/usr/lib/sendmail.hf                      # path del file di aiuto
+OQueueDirectory=/var/spool/mqueue               # path coda
+OTimeout.queuereturn=5d                         # tempo di coda
+OTimeout.queuewarn=4h
+OStatusFile=/var/tmp/sendmail.st                # path status file
+OHostsFile=/etc/hosts                           # path file hosts
+O PrivacyOptions=authwarnings,noexpn,novrfy     # impedisce agli spammer di usare i comandi EXPN e NOVRFY
+
+# FORMATO INTESTAZIONI
+H?P?Return-Path: <$g>                           # path mailer
+HReceived: $?sfrom $s $.by $j ($v/$Z)
+H?D?Resent-Date: $a
+H?D?Date: $a
+H?F?Resent-From: $q
+H?F?From: $q                                    # mittente
+H?x?Full-Name: $x
+HSubject:
+H?M?Resent-Message-Id: <$t.$i@$j>
+H?M?Message-Id: <$t.$i@$j>
+
+# MAILER
+# posta locale
+Mlocal, P=/bin/mail, F=rlsDFMmn, S=10, R=20, A=mail -d $u
+# spedizione a programmi
+Mprog, P=/bin/sh, F=lsDFMe, S=10, R=20, A=sh -c $u
+# posta tcp/ip al dominio local
+Mtcpld, P=[ICP], F=mDFMueXLC, S=17, R=27, A=IPC $h, E=\r\n
+# posta tcp/ip a Internet
+Mtcp, P=[ICP], F=mDFMueXLC, S=14, R=24, A=IPC $h, E=\r\n
+# posta uucp
+Muucp, P=/usr/bin/uux, F=DFMhuU, S=13, R=23, M=100000,
+A=uux - -r -z -a$f -gC $h!rmail ($u)
