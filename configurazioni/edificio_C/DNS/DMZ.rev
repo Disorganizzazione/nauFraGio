@@ -1,0 +1,20 @@
+$TTL 86400
+@	IN	SOA	capitano.naufragioline.it	admin.naufragioline.it (
+	2018162002	;Serial
+	36000      	;Refresh
+	3600		;Retry
+	3600000		;Expire
+	36000		;Minimum
+)
+
+; Definizione dei server DNS e mail
+IN    NS    capitano.naufragioline.it
+IN MX 10 	mozzo.naufragioline.it
+
+; Definizione host
+202.3	IN	PTR	controfiocco.naufragioline.it.		# Interior Router
+2.6		IN	PTR	mozzo.naufragioline.it.				# Server Mail
+4.6		IN	PTR	ammiraglio.naufragioline.it.		# Server Web
+5.6		IN	PTR	filibustiere.naufragioline.it.		# Server Proxy
+6.6   	IN  PTR circumnavigante.naufragioline.it.	# Exterior Router
+7.6   	IN  PTR chiglia.naufragioline.it.			# Exterior Router
