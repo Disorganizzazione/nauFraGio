@@ -1,0 +1,25 @@
+$TTL 86400
+@    	IN	SOA	controfiocco.carena.naufragioline.it	admin.naufragioline.it {
+	2018021701		;Serial
+	86400      		;Refresh
+	3600       		;Retry
+	604800     		;Expire
+	86400      		;Minimum
+}
+
+; Definizione server DNS di mail
+IN NS 	 capitano.carena.naufragioline.it
+IN MX 10 mozzo.carena.naufragioline.it
+
+; Definizione host TODO
+202.3	IN	PTR	controfiocco.carena3.naufragioline.it.	# Router
+7.6		IN	PTR	chiglia.carena6.naufragioline.it.		# Firewall Interno
+3.6 	IN	PTR	capitano.carena6.naufragioline.it.		# DNS Server
+2.6		IN	PTR	mozzo.carena6.naufragioline.it.			# Mail Server
+
+3.2 	IN	PTR	host_1.carena3.naufragioline.it.		# Host 1
+...
+131.3 	IN	PTR host_130.carena3.naufragioline.it.		# Host 130
+2.7		IN	PTR	host_131.carena7.naufragioline.it.		# Host 131
+...
+131.7 	IN	PTR host_260.carena7.naufragioline.it.		# Host 260

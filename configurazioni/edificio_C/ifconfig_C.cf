@@ -1,0 +1,47 @@
+# CARENA
+
+## INTERIOR ROUTER CONTROFIOCCO
+# Interfaccia sulla rete locale
+ifconfig eth0 192.168.3.202 netmask 255.255.255.0 broadcast 192.168.3.255
+# Interfaccia sulla rete di Ancora
+ifconfig eth1 192.168.101.202 netmask 255.255.255.0 broadcast 192.168.101.255
+# Interfaccia sulla rete di Babordo
+ifconfig eth2 192.168.102.202 netmask 255.255.255.0 broadcast 192.168.102.255
+# Interfaccia sulla rete di Dritta
+ifconfig eth2 192.168.104.202 netmask 255.255.255.0 broadcast 192.168.104.255
+# Interfaccia sulla rete di Esule
+ifconfig eth2 192.168.105.202 netmask 255.255.255.0 broadcast 192.168.105.255
+
+## FIREWALL CIRCUMNAVIGANTE
+# Interfaccia con IP pubblico sulla DMZ
+ifconfig eth0 192.168.6.6 netmask 255.255.255.0 broadcast 192.168.6.255
+# Interfaccia con IP pubblico su Internet
+ifconfig eth1 78.4.240.30 netmask 255.0.0.0 broadcast 78.4.240.30
+
+## HOSTS
+#subnet 3.x
+ifconfig eth0 192.168.3.2 netmask 255.255.0.0 broadcast 192.168.3.255
+...
+ifconfig eth0 192.168.3.131 netmask 255.255.0.0 broadcast 192.168.3.255
+#subnet 7.x
+ifconfig eth0 192.168.7.2 netmask 255.255.0.0 broadcast 192.168.7.255
+...
+ifconfig eth0 192.168.7.131 netmask 255.255.0.0 broadcast 192.168.7.255
+
+## MOZZO - SERVER MAIL DMZ 
+ifconfig eth0 192.168.6.2 netmask 255.255.255.0 broadcast 192.168.6.255
+
+## CAPITANO - SERVER DNS DMZ 
+ifconfig eth0 192.168.6.3 netmask 255.255.255.0 broadcast 192.168.6.255
+
+## AMMIRAGLIO - SERVER WEB DMZ 
+ifconfig eth0 192.168.6.4 netmask 255.255.255.0 broadcast 192.168.6.255
+
+## FILIBUSTIERE - SERVER PROXY DMZ 
+ifconfig eth0 192.168.6.5 netmask 255.255.255.0 broadcast 192.168.6.255
+
+## FIREWALL CHIGLIA
+# Interfaccia con IP pubblico sulla DMZ
+ifconfig eth0 192.168.6.7 netmask 255.255.255.0 broadcast 192.168.6.255
+# Interfaccia con IP pubblico su Rete Aziendale
+ifconfig eth1 192.168.3.203 netmask 255.255.255.0 broadcast 192.168.3.255
