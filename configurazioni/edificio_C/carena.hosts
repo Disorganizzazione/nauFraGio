@@ -1,6 +1,6 @@
 $TTL 86400
 @ IN SOA controfiocco.carena.naufragioline.it admin.naufragioline.it {
- 2018021701  ;Serial
+ 2018021701   ;Serial
  86400        ;Refresh
  3600         ;Retry
  604800       ;Expire
@@ -21,7 +21,7 @@ host_1        IN A 192.168.113.3     # Host 1
 ...
 host_130      IN A 192.168.113.132   # Host 130
 
-host_131        IN A 192.168.123.3    # Host 131
+host_131      IN A 192.168.123.3    # Host 131
 ...
 host_260      IN A 192.168.123.132  # Host 260
 
