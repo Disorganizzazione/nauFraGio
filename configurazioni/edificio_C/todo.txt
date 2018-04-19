@@ -1,5 +1,2 @@
-(1) Vedere configurazione passiva di controfiocco verso router bis interno, gestione dei 260 utenti su 2 reti. 
-    nel file TODO_controfiocco.gadet.config
-(2) Circumnavigante.gated.config e chiglia sono OK
-(3) Cambiati gli indirizzi dei server della DMZ in ifconfig_C , resta da vedere la parte degli host delle 2 sottoreti
-(4) Rifatto il routing statico della DMZ nel file RoutingDMZ.config ... da vedere ma ok.. 
+
+
