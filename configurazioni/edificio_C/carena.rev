@@ -20,6 +20,7 @@ IN MX 10 mozzo.carena.naufragioline.it
 3.113.168.192 	IN	PTR	host_1.carena3.naufragioline.it.		# Host 1
 ...
 132.113.168.192 IN	PTR host_130.carena3.naufragioline.it.			# Host 130
+
 3.123.168.192	IN	PTR	host_131.carena7.naufragioline.it.		# Host 131
 ...
 132.123.168.192 IN	PTR host_260.carena7.naufragioline.it.			# Host 260
