@@ -13,9 +13,13 @@ IN MX 10 mozzo.carena.naufragioline.it
 
 ; Definizione host
 controfiocco  IN A 192.168.103.202 # Router
-chiglia       IN A 212.10.6.7 # Firewall Interno
-capitano      IN A 212.10.6.3 # Server DNS DMZ
-mozzo         IN A 212.10.6.2 # Server Mail DMZ
+effemeridi      IN A 212.10.6.30 # Server DNS DMZ E
+embargo         IN A 212.10.6.20 # Server backup DMZ E
+ 
+mozzo         IN A 212.10.6.2 # Server mail DMZ C
+filibustiere  IN A 212.10.6.5 # Server proxy DMZ C
+ammiraglio    IN A 212.10.6.4 # Server web DMZ C
+capitano      IN A 212.10.6.3 # Server DNS DMZ C
 
 host_1        IN A 192.168.113.3     # Host 1
 ...
@@ -27,3 +31,4 @@ host_260      IN A 192.168.123.132  # Host 260
 
 ;#
 
+$
