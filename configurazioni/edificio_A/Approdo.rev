@@ -1,0 +1,19 @@
+$TTL 86400
+@    	IN	SOA	approdo.ancora.naufragioline.it	admin.naufragioline.it {
+	2018021701		;Serial
+	86400      		;Refresh
+	3600       		;Retry
+	604800     		;Expire
+	86400      		;Minimum
+}
+ 
+; Definizione server DNS di mail
+IN NS 	capitano.carena.naufragioline.it
+IN MX 10 mozzo.carena.naufragioline.it
+
+; Definizione host
+202.101.168.192 	IN	PTR	approdo.ancora.naufragioline.it		# Router
+
+3			IN	PTR	host_1.approdo.ancora.naufragioline.it. # Host 1
+...
+52 			IN 	PTR 	host_50.approdo.ancora.naufragioline.it # Host 50
