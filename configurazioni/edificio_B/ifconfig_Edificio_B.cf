@@ -1,0 +1,22 @@
+# GESTIONE OFFERTE
+
+# INTERIOR ROUTER DWALIN
+# Interfaccia sulla rete locale
+ifconfig eth0 192.168.2.202 netmask 255.255.255.0 broadcast 192.168.2.255
+# Interfaccia sulla rete di Relazioni Pubbliche, non visibile ma raggiungibile tramite amministrazione
+ifconfig eth1 192.168.4.202 netmask 255.255.255.0 broadcast 192.168.4.255
+# Interfaccia sulla rete di Amministrazione
+ifconfig eth2 192.168.4.202 netmask 255.255.255.0 broadcast 192.168.4.255
+# Interfaccia sulla rete di Ufficio Finanze
+ifconfig eth3 192.168.3.202 netmask 255.255.255.0 broadcast 192.168.3.255
+
+# SERVER AP SAM
+ifconfig eth0 192.168.2.2 netmask 255.255.255.0 broadcast 192.168.2.255
+
+# SERVER Backup ARAGORN
+ifconfig eth0 192.168.2.153 netmask 255.255.255.0 broadcast 192.168.2.255
+
+# HOSTS
+ifconfig eth0 192.168.2.3 netmask 255.255.255.0 broadcast 192.168.2.255
+...
+ifconfig eth0 192.168.2.152 netmask 255.255.255.0 broadcast 192.168.2.255
