@@ -1,5 +1,5 @@
 $TTL 86400
-@ IN SOA controfiocco.carena.naufragioline.it admin.naufragioline.it {
+@ IN SOA ecoscandaglio.esule.naufragioline.it admin.naufragioline.it {
  2018021701   ;Serial
  86400        ;Refresh
  3600         ;Retry
@@ -8,11 +8,11 @@ $TTL 86400
 }
 
 ; Definizione server DNS di mail
-IN NS  capitano.carena.naufragioline.it  
+IN NS  effemeridi.esule.naufragioline.it  
 IN MX 10 mozzo.carena.naufragioline.it
 
 ; Definizione host
-controfiocco  IN A 192.168.103.202 # Router
+ecoscandaglio   IN A 192.168.105.202 # Router E
 effemeridi      IN A 212.10.6.30 # Server DNS DMZ E
 embargo         IN A 212.10.6.20 # Server backup DMZ E
  
@@ -21,14 +21,8 @@ filibustiere  IN A 212.10.6.5 # Server proxy DMZ C
 ammiraglio    IN A 212.10.6.4 # Server web DMZ C
 capitano      IN A 212.10.6.3 # Server DNS DMZ C
 
-host_1        IN A 192.168.113.3     # Host 1
+host_1        IN A 192.168.105.2     # Host 1
 ...
-host_130      IN A 192.168.113.132   # Host 130
-
-host_131      IN A 192.168.123.3    # Host 131
-...
-host_260      IN A 192.168.123.132  # Host 260
+host_50      IN A 192.168.105.51   # Host 50
 
 ;#
-
-$

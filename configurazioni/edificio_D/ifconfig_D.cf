@@ -1,0 +1,28 @@
+# configurazione interfaccia di rete
+# del router DERIVA di Dritta (edificio D)
+
+# interfaccia verso CONTROFIOCCO (edificio C)
+ifconfig eth0 192.168.104.243 netmask 255.255.255.0 broadcast 192.168.104.255
+
+# interfaccia verso BANCHINA (edificio B)
+ifconfig eth1 192.168.104.242 netmask 255.255.255.0 broadcast 192.168.104.255
+
+# interfaccia verso access point wifi
+ifconfig eth2 192.168.104.204 netmask 255.255.255.0 broadcast 192.168.104.255 
+
+# interfaccia verso dhcp server Nostromo
+ifconfig eth3 192.168.104.205 netmask 255.255.255.0 broadcast 192.168.104.255 
+
+# interfaccia verso la sottorete interna
+ifconfig eth4 192.168.104.202 netmask 255.255.255.0 broadcast 192.168.104.255 
+
+# sottorete lan (192.168.104.x) con 40 host
+
+ifconfig eth4 192.168.104.2 netmask 255.255.255.0 broadcast 192.168.104.255 #Host_1
+.
+.
+.
+ifconfig eth4 192.168.104.41 netmask 255.255.255.0 broadcast 192.168.104.255 #Host_40
+
+
+
