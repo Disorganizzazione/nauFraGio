@@ -1,6 +1,6 @@
 $TTL 86400
-@	IN	SOA	dwalin.gestione_offerte.surfnet.com	admin.surfnet.com {
-	2018021701 	;Serial
+@	IN	SOA	banchina.babordo.naufragioline.it	admin.naufragioline.it {
+	2018021701 		;Serial
 	86400      		;Refresh
 	3600       		;Retry
 	604800     		;Expire
@@ -8,12 +8,12 @@ $TTL 86400
 }
 
 ; Definizione server DNS di mail
-IN NS 	boromir.amministrazione.surfnet.com  
-IN MX 10 gandalf.amministrazione.surfnet.com
+IN NS 	capitano.carena.naufragioline.it
+IN MX 10 mozzo.carena.naufragioline.it
 
 ; Definizione host
-dwalin IN A 192.168.2.1 # Router
+banchina IN A 192.168.102.202 		# Router
 
-host_1    	IN	A	192.168.2.3     # Host 1
+host_1    	IN	A	192.168.2.2    	# Host 1
 ...
-host_50 	IN A 192.168.2.152		# Host 150
+host_100 	IN 	A	192.168.2.101	# Host 100
