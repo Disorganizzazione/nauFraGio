@@ -12,8 +12,8 @@ IN NS 	capitano.carena.naufragioline.it
 IN MX 10 mozzo.carena.naufragioline.it
 
 ; Definizione host
-202.101.168.192 	IN	PTR	approdo.ancora.naufragioline.it		# Router
+202.101.168.192 IN	PTR	approdo.ancora.naufragioline.it			# Router
 
-3			IN	PTR	host_1.approdo.ancora.naufragioline.it. # Host 1
+2				IN	PTR	host_1.approdo.ancora.naufragioline.it. # Host 1
 ...
-52 			IN 	PTR 	host_50.approdo.ancora.naufragioline.it # Host 50
+51 				IN 	PTR host_50.approdo.ancora.naufragioline.it # Host 50

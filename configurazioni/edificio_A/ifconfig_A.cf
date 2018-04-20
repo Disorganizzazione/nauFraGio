@@ -7,6 +7,6 @@ ifconfig eth0 192.168.101.202 netmask 255.255.255.0 broadcast 192.168.101.255
 ifconfig eth1 192.168.101.213 netmask 255.255.255.0 broadcast 192.168.101.255
 
 # HOSTS
-ifconfig eth0 192.168.101.3 netmask 255.255.255.0 broadcast 192.168.101.255
+ifconfig eth0 192.168.101.2 netmask 255.255.255.0 broadcast 192.168.101.255
 ...
-ifconfig eth0 192.168.101.52 netmask 255.255.255.0 broadcast 192.168.101.255
+ifconfig eth0 192.168.101.51 netmask 255.255.255.0 broadcast 192.168.101.255
