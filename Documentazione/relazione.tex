@@ -1,0 +1,109 @@
+\documentclass[]{scrartcl}
+
+\usepackage[utf8]{inputenc}
+\usepackage[italian]{babel}
+\usepackage{graphicx}
+\usepackage{float} %per posizione assoluta delle immagini [H]
+\usepackage[colorlinks=true,linkcolor=blue]{hyperref}
+\usepackage{nameref} 
+
+\graphicspath{{../Immagini/}}
+\def\code#1{\texttt{#1}}
+\def\image[#1][#2]#3{
+	\begin{figure}[H]
+		\centering
+		\includegraphics[#2]{#1}
+		\caption{#3}
+\end{figure}}
+\def\boximage[#1][#2]#3{
+	\begin{figure}[H]
+		\centering
+		\fbox{\includegraphics[#2]{#1}}
+		\caption{#3}
+\end{figure}}
+%opening
+\title{Progettazione e configurazione di una rete aziendale}
+\author{Cuccu Gioara Roberta, Bultrini Francesco}
+
+\begin{document}
+
+\maketitle
+\newpage
+\tableofcontents
+\newpage
+
+\section{Schematizzazione della rete}
+\subsection{Schema fisico}
+Il lavoro consiste nella progettazione e nella configurazione di una rete per conto di una azienda che produce e vende materiali, compositi e leghe leggere per il settore nautico e navale.
+\boximage[Schema_fisico.jpg][scale=0.2]{Schema fisico della rete.}
+L'azienda è composta da 5 edifici, a cui è stato dato il nome di alcune parti della nave.
+In figura si può notare l'edificio Carena in cui sono stati collocati un server proxy, un server di posta elettronica, un server DNS e un server web. 
+L'edificio Ancora collocato a 100 metri da esso, Babordo anch'esso a 100 metri da Carena, in cui abbiamo posto un server per le applicazioni aziendali da proteggere con particolare attenzione, Dritta a 100 metri da Carena e Babordo, in cui è presente la copertura WiFi, a distanza di 7km da Carena e Dritta è collocato Esule, edificio al cui interno sono presenti un'altro DNS e un server di backup.\\
+
+\begin{table}[H]
+\centering
+\label{Caratteristiche degli edifici}
+\begin{tabular}{|l|l|l|l|}
+	\hline
+	\multicolumn{1}{|c|}{\textbf{Nome edificio}} & \multicolumn{1}{c|}{\textbf{Numero utenti}} & \multicolumn{1}{c|}{\textbf{Server}} & \multicolumn{1}{c|}{\textbf{Wi-Fi}}\\ \hline
+	Ancora & 50 & - & NO\\ \hline
+	Babordo & 100 & App.Aziendali  & NO \\ \hline
+	Dritta & 150 & DHCP  & SI \\ \hline
+	Carena & 240 & \begin{tabular}[c]{@{}l@{}}DNS, Web, \\ Mail, Proxy\end{tabular}  & NO \\ \hline
+	Eremo & 50 & DNS, Backup  & NO \\ \hline
+\end{tabular}
+\caption{Caratteristiche degli edifici}
+\end{table}
+
+\subsection{Schema logico}
+La rete principale 192.168.0.0/24 è stata suddivisa in 5 sottoreti, una per ogni edificio, ottenedo così le seguenti reti: 192.168.101.0/24 su Ancora , 192.168.102.0/24 su Babordo , 192.168.103.0/24 su Carena, 192.168.104.0/24 su Dritta e 192.168.105.0/24 su Esule. All'interno di Carena è stato fatto un ragionamento simile per la gestione dei 260 utenti presenti al suo interno, formando cosi due ulteriori sottoreti, 192.168.113.0/24 e 192.168.123.0/24. 
+\boximage[Schema_fisico.jpg][scale=0.2]{Schema logico della rete.}
+I quattro edifici più vicini tra loro (Ancora, Babordo, Carena, Dritta) sono collegati tramite fibra ottica, in modo da garantire un servizio veloce ed affidabile. Per motivi economici, non è stato possibile adottare la stessa soluzione per l'edificio E in quanto distante 7km dagli altri: quest'ultimo è connesso ai restanti tramite VPN (Virtual Private Network), sfruttando le reti pubbliche senza compromettere la sicurezza.
+\subsubsection{Ancora}
+Edicifio situato come precedentemente specificato, a 100metri da Carena. Contiene 50 utenti gestiti attraverso un router(Approdo) collegato ad 2 switch da 24 porte per l'indirizzamento di 40 utenti ed uno da 16 porte per i restanti 10 utenti. 
+\boximage[Schema_fisico.jpg][scale=0.2]{Schema logico di Ancora.}
+\subsubsection{Babordo}
+Edicifio situato come precedentemente specificato, a 100metri da Carena. Contiene 100 utenti gestiti attraverso un router(Banchina) collegato ad due switch da 48 porte per l'indirizzamento di 90 utenti ed uno da 16 porte per i restanti 10 utenti. Al suo interno è presente il server per le applicazioni aziendali. 
+\boximage[Schema_fisico.jpg][scale=0.2]{Schema logico di Babordo.}
+\subsubsection{Carena}
+Edicifio principale contenente i server di posta elettronica, proxy, web e DNS collati all'interno della DMZ (Zona Demilitarizzata) la cui rete interna è 212.10.6.0/24 che comunica con l'esterno di essa tramite due firewall, uno interno per la rete interna dell'edificio e uno esterno dal quale riceve internet. Situato a 100metri da Ancora e Babordo vengono gestiti 260 utenti tramite due sottoreti della rete interna principale, attraverso un router(Banchina) collegato ad 6 switch da 48 porte.
+\boximage[Schema_fisico.jpg][scale=0.2]{Schema logico di Carena.}
+\subsubsection{Dritta}
+Edicifio situato come precedentemente specificato, a 100metri da Carena. Contiene 150 utenti gestiti attraverso un router Wi-Fi(Deriva) collegato ad uno switch da 48 porte per l'indirizzamento di 40 utenti sulla rete lan, e ad un access point per i restanti utenti che usufruiscono della rete WiFi. Al suo interno è presente il server DCHP per la gestione della rete WiFi. 
+\boximage[Schema_fisico.jpg][scale=0.2]{Schema logico di Dritta.}
+\subsubsection{Esule}
+Edicifio situato come precedentemente specificato, a 100metri da Carena. Contiene 50 utenti gestiti attraverso un router(Ecoscandaglio) collegato ad uno switch da 48 porte per l'indirizzamento di 45 utenti e uno da 8 per i restanti 5utenti. Al suo interno sono presenti all'interno di una seconda DMZ la cui rete è 212.10.6.0/24 , un'altro server DNS e un server di backup, due firewall per la comunicazione con l'esterno di essa, uno per la rete interna principale e uno per le comunicazioni con reti esterne all'edificio.
+\boximage[Schema_fisico.jpg][scale=0.2]{Schema logico di Esule.}
+\section{Routing}
+Per una limitazione di costi e tempo nella realizzazione dell'impianto, è stato usato il protocollo RIP ed un routing statico per tutti i dispositivi eccetto i router principali.
+\section{DNS}
+I due server DNS sono collocati nelle due DMZ rispettivamente in Carena ed Esule traducono i nomi degli indirizzi dei server cui si accede dall'esterno,ad esempio il server web. Questo è essenziale per la presenza online dell'azienda.
+\section{Protezione e sicurezza}
+\subsection{Protezione}
+La sicurezza del server per applicazioni aziendali è stata rafforzata filtrando i pacchetti TCP e il superserver \code{xinetd}, che a sua volta monitora le richieste ai servizi telnet, SSH e NFS talvolta, come nel caso di telnet, disabilitandoli completamente.
+\subsection{Sicurezza}
+Per soddisfare gli standard minimi di sicurezza, si è scelto di adoperare quattro firewall distinti, configurati tramite \code{iptables}, integrati nei quattro router delle rispettive DMZ. Grazie ad essi, la DMZ risulta protetta sia dagli accessi provenienti dalla rete locale che da quelli esterni. Il firewall collocato tra la rete locale e la DMZ filtra i pacchetti che queste due porzioni di rete si scambiano tramite due catene di regole (\code{dmzlan} e \code{landmz}) e funge da NAT. Analogamente, il firewall esterno si serve delle due catene \code{inetdmz} e \code{dmzinet} per effettuare il packet filtering tra Internet e la DMZ. Per un ulteriore sicurezza è presente un'altra DMZ nell'edificio Esule il quale contiene il server di backup.
+\section{Preventivo di spesa}
+
+\begin{table}[H]
+	\centering
+	\label{costo componentistica}
+	\resizebox{\textwidth}{!}{\begin{tabular}{ll|l|l|}
+			\hline
+			\multicolumn{1}{|c|}{\textbf{Componente}} & \multicolumn{1}{c|}{\textbf{Quantità}} & \multicolumn{1}{c|}{\textbf{Prezzo cad.}} & \textbf{Prezzo tot.} \\ \hline
+			\multicolumn{1}{|l|}{TP-Link TL-SF1008D Switch Desktop, 8 Porte RJ45 10/100 Mbps} & 1 & 12.99 EUR & 12.99 EUR \\ \hline
+			\multicolumn{1}{|l|}{D-Link GO-SW-16G Switch 16porte} & 1 & 56.19 EUR & 112.38 EUR \\ \hline
+			\multicolumn{1}{|l|}{Modulo fibra} & 4 & 40 EUR  & 160 EUR \\ \hline
+			\multicolumn{1}{|l|}{D-Link GO-SW-24G Switch 24porte} & 2 & 68.98 EUR & 137.96 EUR \\ \hline
+			\multicolumn{1}{|l|}{TP-Link TL-SF1048 Switch 48 Porte} & 9 & 154.34 EUR & 1389.06 EUR \\ \hline
+			\multicolumn{1}{|l|}{WiFi access point} & 1 & 130 EUR & 130 EUR \\ \hline
+			\multicolumn{1}{|l|}{Fibra ottica} & 1400 m & 6.34 EUR/m & 8876 EUR \\ \hline
+			\multicolumn{1}{|l|}{Cavo UTP} & 3000 m & 2.65 EUR/m & 7950 EUR \\ \hline
+			\multicolumn{1}{|l|}{VPN} &  & 300 EUR annui & 300 EUR annui \\ \hline
+			&  & TOTALE: & \textbf{19068.87 EUR} \\ \cline{3-4} 
+	\end{tabular}}
+	\caption{Costo delle componenti hardware}
+\end{table}
+\ \\Al costo della componentistica va sommato il costo dell'installazione, pari a 20.000 euro, per un totale complessivo di 19088.87 euro.
+
+\end{document}

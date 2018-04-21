@@ -1,2 +1,0 @@
-# nauFraGio
-ProgettoDiProtocolli
