@@ -21,6 +21,7 @@
 		\fbox{\includegraphics[#2]{#1}}
 		\caption{#3}
 \end{figure}}
+\usepackage[a4paper,top=3cm,bottom=3cm,left=2cm,right=2cm]{geometry}
 %opening
 \title{Progettazione e configurazione di una rete aziendale}
 \author{Cuccu Gioara Roberta, Bultrini Francesco}
@@ -35,11 +36,11 @@
 \section{Schematizzazione della rete}
 \subsection{Schema fisico}
 Il lavoro consiste nella progettazione e nella configurazione di una rete per conto di una azienda che produce e vende materiali, compositi e leghe leggere per il settore nautico e navale.
-\boximage[Schema_fisico.jpg][scale=0.2]{Schema fisico della rete.}
+\boximage[mappa.png][scale=0.27]{Schema fisico della rete.}
 L'azienda è composta da 5 edifici, a cui è stato dato il nome di alcune parti della nave.
 In figura si può notare l'edificio Carena in cui sono stati collocati un server proxy, un server di posta elettronica, un server DNS e un server web. 
-L'edificio Ancora collocato a 100 metri da esso, Babordo anch'esso a 100 metri da Carena, in cui abbiamo posto un server per le applicazioni aziendali da proteggere con particolare attenzione, Dritta a 100 metri da Carena e Babordo, in cui è presente la copertura WiFi, a distanza di 7km da Carena e Dritta è collocato Esule, edificio al cui interno sono presenti un'altro DNS e un server di backup.\\
-
+L'edificio Ancora collocato a 100 metri da esso, Babordo anch'esso a 100 metri da Carena, in cui abbiamo posto un server per le applicazioni aziendali da proteggere con particolare attenzione, Dritta a 100 metri da Carena e Babordo, in cui è presente la copertura WiFi, a distanza di 7km da Carena e Dritta è collocato Esule, edificio al cui interno sono presenti un'altro DNS e un server di backup.
+\\
 \begin{table}[H]
 \centering
 \label{Caratteristiche degli edifici}
@@ -54,26 +55,28 @@ L'edificio Ancora collocato a 100 metri da esso, Babordo anch'esso a 100 metri d
 \end{tabular}
 \caption{Caratteristiche degli edifici}
 \end{table}
-
+\newpage
 \subsection{Schema logico}
-La rete principale 192.168.0.0/24 è stata suddivisa in 5 sottoreti, una per ogni edificio, ottenedo così le seguenti reti: 192.168.101.0/24 su Ancora , 192.168.102.0/24 su Babordo , 192.168.103.0/24 su Carena, 192.168.104.0/24 su Dritta e 192.168.105.0/24 su Esule. All'interno di Carena è stato fatto un ragionamento simile per la gestione dei 260 utenti presenti al suo interno, formando cosi due ulteriori sottoreti, 192.168.113.0/24 e 192.168.123.0/24. 
-\boximage[Schema_fisico.jpg][scale=0.2]{Schema logico della rete.}
+La rete principale 192.168.0.0/24 è stata suddivisa in 5 sottoreti, una per ogni edificio, ottenedo così le seguenti reti: 192.168.101.0/24 su Ancora , 192.168.102.0/24 su Babordo , 192.168.103.0/24 su Carena, 192.168.104.0/24 su Dritta e 192.168.105.0/24 su Esule. All'interno di Carena è stato fatto un ragionamento simile per la gestione dei 260 utenti presenti al suo interno, formando cosi due ulteriori sottoreti, 192.168.113.0/24 e 192.168.123.0/24. \\
+\boximage[schema_logico.png][scale=0.1]{Schema logico della rete.} 
 I quattro edifici più vicini tra loro (Ancora, Babordo, Carena, Dritta) sono collegati tramite fibra ottica, in modo da garantire un servizio veloce ed affidabile. Per motivi economici, non è stato possibile adottare la stessa soluzione per l'edificio E in quanto distante 7km dagli altri: quest'ultimo è connesso ai restanti tramite VPN (Virtual Private Network), sfruttando le reti pubbliche senza compromettere la sicurezza.
+\newpage
 \subsubsection{Ancora}
-Edicifio situato come precedentemente specificato, a 100metri da Carena. Contiene 50 utenti gestiti attraverso un router(Approdo) collegato ad 2 switch da 24 porte per l'indirizzamento di 40 utenti ed uno da 16 porte per i restanti 10 utenti. 
-\boximage[Schema_fisico.jpg][scale=0.2]{Schema logico di Ancora.}
+Edicifio situato come precedentemente specificato, a 100metri da Carena. Contiene 50 utenti gestiti attraverso un router(Approdo) collegato a due switch da 24 porte per l'indirizzamento di 40 utenti ed uno da 16 porte per i restanti 10 utenti. 
+\boximage[ancora.png][scale=0.27]{Schema logico di Ancora.}
 \subsubsection{Babordo}
-Edicifio situato come precedentemente specificato, a 100metri da Carena. Contiene 100 utenti gestiti attraverso un router(Banchina) collegato ad due switch da 48 porte per l'indirizzamento di 90 utenti ed uno da 16 porte per i restanti 10 utenti. Al suo interno è presente il server per le applicazioni aziendali. 
-\boximage[Schema_fisico.jpg][scale=0.2]{Schema logico di Babordo.}
+Edicifio situato come precedentemente specificato, a 100metri da Carena. Contiene 100 utenti gestiti attraverso un router(Banchina) collegato a due switch da 48 porte per l'indirizzamento di 90 utenti ed uno da 16 porte per i restanti 10 utenti. Al suo interno è presente il server per le applicazioni aziendali. 
+\boximage[babordo.png][scale=0.3]{Schema logico di Babordo.}
 \subsubsection{Carena}
 Edicifio principale contenente i server di posta elettronica, proxy, web e DNS collati all'interno della DMZ (Zona Demilitarizzata) la cui rete interna è 212.10.6.0/24 che comunica con l'esterno di essa tramite due firewall, uno interno per la rete interna dell'edificio e uno esterno dal quale riceve internet. Situato a 100metri da Ancora e Babordo vengono gestiti 260 utenti tramite due sottoreti della rete interna principale, attraverso un router(Banchina) collegato ad 6 switch da 48 porte.
-\boximage[Schema_fisico.jpg][scale=0.2]{Schema logico di Carena.}
+\boximage[carena.png][scale=0.35]{Schema logico di Carena.}
+\newpage
 \subsubsection{Dritta}
-Edicifio situato come precedentemente specificato, a 100metri da Carena. Contiene 150 utenti gestiti attraverso un router Wi-Fi(Deriva) collegato ad uno switch da 48 porte per l'indirizzamento di 40 utenti sulla rete lan, e ad un access point per i restanti utenti che usufruiscono della rete WiFi. Al suo interno è presente il server DCHP per la gestione della rete WiFi. 
-\boximage[Schema_fisico.jpg][scale=0.2]{Schema logico di Dritta.}
+Edicifio situato come precedentemente specificato, a 100metri da Carena. Contiene 150 utenti gestiti attraverso un router Wi-Fi(Deriva) collegato a uno switch da 48 porte per l'indirizzamento di 40 utenti sulla rete lan, e ad un access point per i restanti utenti che usufruiscono della rete WiFi. Al suo interno è presente il server DCHP per la gestione della rete WiFi. 
+\boximage[dritta.png][scale=0.25]{Schema logico di Dritta.}
 \subsubsection{Esule}
-Edicifio situato come precedentemente specificato, a 100metri da Carena. Contiene 50 utenti gestiti attraverso un router(Ecoscandaglio) collegato ad uno switch da 48 porte per l'indirizzamento di 45 utenti e uno da 8 per i restanti 5utenti. Al suo interno sono presenti all'interno di una seconda DMZ la cui rete è 212.10.6.0/24 , un'altro server DNS e un server di backup, due firewall per la comunicazione con l'esterno di essa, uno per la rete interna principale e uno per le comunicazioni con reti esterne all'edificio.
-\boximage[Schema_fisico.jpg][scale=0.2]{Schema logico di Esule.}
+Edicifio situato come precedentemente specificato, a 100metri da Carena. Contiene 50 utenti gestiti attraverso un router(Ecoscandaglio) collegato a uno switch da 48 porte per l'indirizzamento di 45 utenti e uno da 8 per i restanti 5utenti. Al suo interno sono presenti all'interno di una seconda DMZ la cui rete è 212.10.6.0/24 , un'altro server DNS e un server di backup, due firewall per la comunicazione con l'esterno di essa, uno per la rete interna principale e uno per le comunicazioni con reti esterne all'edificio.
+\boximage[esule.png][scale=0.25]{Schema logico di Esule.}
 \section{Routing}
 Per una limitazione di costi e tempo nella realizzazione dell'impianto, è stato usato il protocollo RIP ed un routing statico per tutti i dispositivi eccetto i router principali.
 \section{DNS}
@@ -104,6 +107,6 @@ Per soddisfare gli standard minimi di sicurezza, si è scelto di adoperare quatt
 	\end{tabular}}
 	\caption{Costo delle componenti hardware}
 \end{table}
-\ \\Al costo della componentistica va sommato il costo dell'installazione, pari a 20.000 euro, per un totale complessivo di 19088.87 euro.
+\ \\Al costo della componentistica va sommato il costo dell'installazione, pari a 20.000 euro, per un totale complessivo di 39068.87 euro.
 
 \end{document}

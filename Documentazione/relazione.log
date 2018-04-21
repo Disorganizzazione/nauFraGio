@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Arch Linux) (preloaded format=pdflatex 2018.4.18)  21 APR 2018 16:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Arch Linux) (preloaded format=pdflatex 2018.4.18)  21 APR 2018 18:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -586,25 +586,39 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count105
 )
-(./relazione.aux)
+(/usr/share/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2010/09/12 v5.6 Page Geometry
+\Gm@cnth=\count106
+\Gm@cntv=\count107
+\c@Gm@tempcnt=\count108
+\Gm@bindingoffset=\dimen110
+\Gm@wd@mp=\dimen111
+\Gm@odd@mp=\dimen112
+\Gm@even@mp=\dimen113
+\Gm@layoutwidth=\dimen114
+\Gm@layoutheight=\dimen115
+\Gm@layouthoffset=\dimen116
+\Gm@layoutvoffset=\dimen117
+\Gm@dimlist=\toks19
+) (./relazione.aux)
 \openout1 = `relazione.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Info: Redefining \it@ocap on input line 28.
-LaTeX Info: Redefining \it@ccap on input line 28.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Info: Redefining \it@ocap on input line 29.
+LaTeX Info: Redefining \it@ccap on input line 29.
 
 
 File italian.ldf warning: 
@@ -612,21 +626,21 @@ italian.ldf    With OT1 encoding guillemets are poorly faked
 italian.ldf    Use T1 encoding
 italian.ldf    or specify a font with command \CaporaliFrom
 italian.ldf    See the documentation concerning the babel-italian typesetting 
-italian.ldf    on input line 28.
+italian.ldf    on input line 29.
 
 (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count106
-\scratchdimen=\dimen110
+\scratchcounter=\count109
+\scratchdimen=\dimen118
 \scratchbox=\box30
-\nofMPsegments=\count107
-\nofMParguments=\count108
-\everyMPshowfont=\toks19
-\MPscratchCnt=\count109
-\MPscratchDim=\dimen111
-\MPnumerator=\count110
-\makeMPintoPDFobject=\count111
-\everyMPtoPDFconversion=\toks20
+\nofMPsegments=\count110
+\nofMParguments=\count111
+\everyMPshowfont=\toks20
+\MPscratchCnt=\count112
+\MPscratchDim=\dimen119
+\MPnumerator=\count113
+\makeMPintoPDFobject=\count114
+\everyMPtoPDFconversion=\toks21
 ) (/usr/share/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -654,24 +668,58 @@ File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package color Info: Driver file: pdftex.def on input line 147.
 )
-Package hyperref Info: Link coloring ON on input line 28.
-LaTeX Info: Redefining \ref on input line 28.
-LaTeX Info: Redefining \pageref on input line 28.
-LaTeX Info: Redefining \nameref on input line 28.
+Package hyperref Info: Link coloring ON on input line 29.
+LaTeX Info: Redefining \ref on input line 29.
+LaTeX Info: Redefining \pageref on input line 29.
+LaTeX Info: Redefining \nameref on input line 29.
  (./relazione.out)
 (./relazione.out)
 \@outlinefile=\write3
 \openout3 = `relazione.out'.
 
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(56.9055pt, 483.69687pt, 56.9055pt)
+* v-part:(T,H,B)=(85.35826pt, 674.33032pt, 85.35826pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=483.69687pt
+* \textheight=674.33032pt
+* \oddsidemargin=-15.36449pt
+* \evensidemargin=-15.36449pt
+* \topmargin=-24.31174pt
+* \headheight=17.0pt
+* \headsep=20.40001pt
+* \topskip=11.0pt
+* \footskip=47.6pt
+* \marginparwidth=59.7508pt
+* \marginparsep=12.8401pt
+* \columnsep=10.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <14.4> on input line 31.
+(Font)              <14.4> on input line 32.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 31.
- [1
+(Font)              <7> on input line 32.
+[1
 
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-(./relazione.toc
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./relazione.toc
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <10.95> on input line 4.
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -682,72 +730,84 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 \tf@toc=\write4
 \openout4 = `relazione.toc'.
 
- [2]
-<../Immagini/Schema_fisico.jpg, id=87, 1284.8pt x 1020.81375pt>
-File: ../Immagini/Schema_fisico.jpg Graphic file (type jpg)
-<use ../Immagini/Schema_fisico.jpg>
-Package pdftex.def Info: ../Immagini/Schema_fisico.jpg  used on input line 38.
-(pdftex.def)             Requested size: 256.95544pt x 204.15913pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 39--42
+[2]
+<../Immagini/mappa.png, id=87, 1272.25313pt x 755.07094pt>
+File: ../Immagini/mappa.png Graphic file (type png)
+<use ../Immagini/mappa.png>
+Package pdftex.def Info: ../Immagini/mappa.png  used on input line 39.
+(pdftex.def)             Requested size: 343.51294pt x 203.87187pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 40--57
 
  []
 
-[3 <../Immagini/Schema_fisico.jpg>]
-File: ../Immagini/Schema_fisico.jpg Graphic file (type jpg)
-<use ../Immagini/Schema_fisico.jpg>
-Package pdftex.def Info: ../Immagini/Schema_fisico.jpg  used on input line 60.
-(pdftex.def)             Requested size: 256.95544pt x 204.15913pt.
-File: ../Immagini/Schema_fisico.jpg Graphic file (type jpg)
-<use ../Immagini/Schema_fisico.jpg>
-Package pdftex.def Info: ../Immagini/Schema_fisico.jpg  used on input line 64.
-(pdftex.def)             Requested size: 256.95544pt x 204.15913pt.
- [4]
-File: ../Immagini/Schema_fisico.jpg Graphic file (type jpg)
-<use ../Immagini/Schema_fisico.jpg>
-Package pdftex.def Info: ../Immagini/Schema_fisico.jpg  used on input line 67.
-(pdftex.def)             Requested size: 256.95544pt x 204.15913pt.
- [5]
-File: ../Immagini/Schema_fisico.jpg Graphic file (type jpg)
-<use ../Immagini/Schema_fisico.jpg>
-Package pdftex.def Info: ../Immagini/Schema_fisico.jpg  used on input line 70.
-(pdftex.def)             Requested size: 256.95544pt x 204.15913pt.
- [6]
-File: ../Immagini/Schema_fisico.jpg Graphic file (type jpg)
-<use ../Immagini/Schema_fisico.jpg>
-Package pdftex.def Info: ../Immagini/Schema_fisico.jpg  used on input line 73.
-(pdftex.def)             Requested size: 256.95544pt x 204.15913pt.
-File: ../Immagini/Schema_fisico.jpg Graphic file (type jpg)
-<use ../Immagini/Schema_fisico.jpg>
-Package pdftex.def Info: ../Immagini/Schema_fisico.jpg  used on input line 76.
-(pdftex.def)             Requested size: 256.95544pt x 204.15913pt.
- [7] [8]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 109.
- [9]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 109.
+[3 <../Immagini/mappa.png>]
+<../Immagini/schema_logico.png, id=97, 4445.60875pt x 2542.49875pt>
+File: ../Immagini/schema_logico.png Graphic file (type png)
+<use ../Immagini/schema_logico.png>
+Package pdftex.def Info: ../Immagini/schema_logico.png  used on input line 61.
+(pdftex.def)             Requested size: 444.58693pt x 254.26477pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 60--61
+
+ []
+
+[4 <../Immagini/schema_logico.png>]
+<../Immagini/ancora.png, id=104, 1268.48906pt x 746.03719pt>
+File: ../Immagini/ancora.png Graphic file (type png)
+<use ../Immagini/ancora.png>
+Package pdftex.def Info: ../Immagini/ancora.png  used on input line 66.
+(pdftex.def)             Requested size: 342.49663pt x 201.43272pt.
+<../Immagini/babordo.png, id=105, 1269.99469pt x 744.53156pt>
+File: ../Immagini/babordo.png Graphic file (type png)
+<use ../Immagini/babordo.png>
+Package pdftex.def Info: ../Immagini/babordo.png  used on input line 69.
+(pdftex.def)             Requested size: 381.00134pt x 223.36119pt.
+<../Immagini/carena.png, id=106, 1272.25313pt x 746.03719pt>
+File: ../Immagini/carena.png Graphic file (type png)
+<use ../Immagini/carena.png>
+Package pdftex.def Info: ../Immagini/carena.png  used on input line 72.
+(pdftex.def)             Requested size: 445.29527pt x 261.11691pt.
+ [5 <../Immagini/ancora.png> <../Immagini/babordo.png>] [6 <../Immagini/carena.
+png>]
+<../Immagini/dritta.png, id=121, 1267.73625pt x 743.77875pt>
+File: ../Immagini/dritta.png Graphic file (type png)
+<use ../Immagini/dritta.png>
+Package pdftex.def Info: ../Immagini/dritta.png  used on input line 76.
+(pdftex.def)             Requested size: 316.93329pt x 185.94423pt.
+<../Immagini/esule.png, id=122, 1273.00594pt x 746.79pt>
+File: ../Immagini/esule.png Graphic file (type png)
+<use ../Immagini/esule.png>
+Package pdftex.def Info: ../Immagini/esule.png  used on input line 79.
+(pdftex.def)             Requested size: 318.2507pt x 186.69704pt.
+ [7 <../Immagini/dritta.png> <../Immagini/esule.png>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 112.
+ [8]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 112.
  (./relazione.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 109.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 109.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 112.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 112.
 Package rerunfilecheck Info: File `relazione.out' has not changed.
 (rerunfilecheck)             Checksum: 53D13B3344636D1FA457B9A07F8615EE;824.
  ) 
 Here is how much of TeX's memory you used:
- 8302 strings out of 492982
- 129218 string characters out of 6138579
- 320728 words of memory out of 5000000
- 11759 multiletter control sequences out of 15000+600000
+ 8765 strings out of 492982
+ 136223 string characters out of 6138579
+ 333391 words of memory out of 5000000
+ 12214 multiletter control sequences out of 15000+600000
  9249 words of font info for 33 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,14n,51p,8820b,359s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,15n,51p,8820b,359s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/font
 s/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/
 amsfonts/cm/cmssbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/
 cmtt10.pfb>
-Output written on relazione.pdf (9 pages, 177127 bytes).
+Output written on relazione.pdf (8 pages, 1074737 bytes).
 PDF statistics:
- 156 PDF objects out of 1000 (max. 8388607)
- 137 compressed objects within 2 object streams
- 34 named destinations out of 1000 (max. 500000)
- 118 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 166 PDF objects out of 1000 (max. 8388607)
+ 135 compressed objects within 2 object streams
+ 33 named destinations out of 1000 (max. 500000)
+ 148 words of extra memory for PDF output out of 10000 (max. 10000000)
 

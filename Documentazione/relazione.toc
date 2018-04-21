@@ -7,10 +7,10 @@
 \contentsline {subsubsection}{\numberline {1.2.2}Babordo}{5}{subsubsection.1.2.2}
 \contentsline {subsubsection}{\numberline {1.2.3}Carena}{6}{subsubsection.1.2.3}
 \contentsline {subsubsection}{\numberline {1.2.4}Dritta}{7}{subsubsection.1.2.4}
-\contentsline {subsubsection}{\numberline {1.2.5}Esule}{8}{subsubsection.1.2.5}
+\contentsline {subsubsection}{\numberline {1.2.5}Esule}{7}{subsubsection.1.2.5}
 \contentsline {section}{\numberline {2}Routing}{8}{section.2}
 \contentsline {section}{\numberline {3}DNS}{8}{section.3}
-\contentsline {section}{\numberline {4}Protezione e sicurezza}{9}{section.4}
-\contentsline {subsection}{\numberline {4.1}Protezione}{9}{subsection.4.1}
-\contentsline {subsection}{\numberline {4.2}Sicurezza}{9}{subsection.4.2}
-\contentsline {section}{\numberline {5}Preventivo di spesa}{9}{section.5}
+\contentsline {section}{\numberline {4}Protezione e sicurezza}{8}{section.4}
+\contentsline {subsection}{\numberline {4.1}Protezione}{8}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Sicurezza}{8}{subsection.4.2}
+\contentsline {section}{\numberline {5}Preventivo di spesa}{8}{section.5}
