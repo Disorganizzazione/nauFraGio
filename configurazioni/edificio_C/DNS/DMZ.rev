@@ -18,7 +18,7 @@ IN MX 10 	mozzo.naufragioline.it
 3.6		IN	PTR	capitano.naufragioline.it.		# Server DNS
 
 ; Definizioni sottorete DMZ edificio E
-20.6		IN	PTR	embargo.naufragioline.it.		# Server  
+30.6		IN	PTR	effemeridi.naufragioline.it.		# Server  DNS
 
 
 ;# 
