@@ -35,8 +35,8 @@ ifconfig eth0 192.168.123.132 netmask 255.255.0.0 broadcast 192.168.123.255
 ## MOZZO - SERVER MAIL DMZ 
 ifconfig eth0 212.10.6.2 netmask 255.255.255.0 broadcast 212.10.6.255
 
-## CAPITANO - SERVER DNS DMZ 
-ifconfig eth0 212.10.6.3 netmask 255.255.255.0 broadcast 212.10.6.255
+## CAPITANO - SERVER DNS interno 
+ifconfig eth0 192.168.103.210 netmask 255.255.255.0 broadcast 192.168.103.255
 
 ## AMMIRAGLIO - SERVER WEB DMZ 
 ifconfig eth0 212.10.6.4 netmask 255.255.255.0 broadcast 212.10.6.255
