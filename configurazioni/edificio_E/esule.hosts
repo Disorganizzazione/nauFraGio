@@ -13,13 +13,11 @@ IN MX 10 mozzo.carena.naufragioline.it
 
 ; Definizione host
 ecoscandaglio   IN A 192.168.105.202 # Router E
-effemeridi      IN A 212.10.6.30 # Server DNS DMZ E
-embargo         IN A 212.10.6.20 # Server backup DMZ E
  
 mozzo         IN A 212.10.6.2 # Server mail DMZ C
 filibustiere  IN A 212.10.6.5 # Server proxy DMZ C
 ammiraglio    IN A 212.10.6.4 # Server web DMZ C
-capitano      IN A 212.10.6.3 # Server DNS DMZ C
+embargo       IN A 212.10.6.3 # Server DNS DMZ C
 
 host_1        IN A 192.168.105.2     # Host 1
 ...
