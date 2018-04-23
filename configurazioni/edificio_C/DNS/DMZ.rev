@@ -15,5 +15,6 @@ IN MX 10 	mozzo.naufragioline.it
 2.6		IN	PTR	mozzo.naufragioline.it.			# Server Mail
 4.6		IN	PTR	ammiraglio.naufragioline.it.		# Server Web
 5.6		IN	PTR	filibustiere.naufragioline.it.		# Server proxy
+210.103.168.192 IN	PTR	capitano.naufragioline.it.		# Server DNS
 
 ;# 
