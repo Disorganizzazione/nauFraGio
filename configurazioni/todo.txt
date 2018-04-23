@@ -1,0 +1,2 @@
+spostare il DNS da DMZ a rete interna su E e C
+mettere il backup su A 
