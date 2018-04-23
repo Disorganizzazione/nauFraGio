@@ -17,7 +17,7 @@ www			IN	 CNAME	ammiraglio		# Alias del Server Web
 mozzo			IN   	 A 		212.10.6.2	# Server Mail
 mail			IN	 CNAME	mozzo			# Alias del Server Mail
 filibustiere		IN	 A		212.10.6.5	# Server Proxy
-dns			IN	 CNAME 	capitano 		# Alias del Server DNS
+proxy			IN	 CNAME 	filibustiere 		# Alias del Server Proxy
 
 ;Definizione host E
 effemeridi			IN	A		192.168.103.210 	# Server DNS
