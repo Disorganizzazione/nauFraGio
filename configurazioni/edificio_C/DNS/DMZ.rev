@@ -14,12 +14,11 @@ IN MX 10 	mozzo.naufragioline.it
 ; Definizione sottorete DMZ edificio C
 2.6		IN	PTR	mozzo.naufragioline.it.			# Server Mail
 4.6		IN	PTR	ammiraglio.naufragioline.it.		# Server Web
-5.6		IN	PTR	filibustiere.naufragioline.it.		# Server Proxy
-3.6		IN	PTR	capitano.naufragioline.it.		# Server Proxy
+5.6		IN	PTR	filibustiere.naufragioline.it.		# Server proxy
+3.6		IN	PTR	capitano.naufragioline.it.		# Server DNS
 
 ; Definizioni sottorete DMZ edificio E
-20.6		IN	PTR	embargo.naufragioline.it.		# Server Proxy
-30.6		IN	PTR	effemeridi.naufragioline.it.		# Server Proxy
+20.6		IN	PTR	embargo.naufragioline.it.		# Server  
 
 
 ;# 
