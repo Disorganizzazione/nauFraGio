@@ -1,0 +1,8 @@
+# ESULE
+## HOSTS 
+#subnet 105.x
+ifconfig eth0 192.168.105.2 netmask 255.255.255.0 broadcast 192.168.105.255
+...
+ifconfig eth0 192.168.105.51 netmask 255.255.255.0 broadcast 192.168.105.255
+
+#
