@@ -21,6 +21,4 @@ dns			IN	 CNAME 	capitano 		# Alias del Server DNS
 
 ;Definizione host E
 effemeridi			IN	A		192.168.103.210 	# Server DNS
-embargo				IN	A		212.10.6.20 	        # Server Bake up
-
 ;#
