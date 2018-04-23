@@ -13,6 +13,7 @@ IN MX 10 mozzo.carena.naufragioline.it
 
 ; Definizione host
 approdo IN A 192.168.101.202 # Router
+embargo IN A 192.168.101.211 # backup 
 
 host_1    	IN	A	192.168.101.3     # Host 1
 ...

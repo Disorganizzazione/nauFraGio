@@ -13,12 +13,10 @@ IN MX 10 mozzo.carena.naufragioline.it
 
 ; Definizione host TODO
 202.103.168.192	IN	PTR	controfiocco.carena.naufragioline.it.		# Router
-3.6.10.212 	IN	PTR	capitano.dmz.naufragioline.it.			# DNS Server C
+210.103.168.192	IN	PTR	capitano.dmz.naufragioline.it.			# DNS Server C
 2.6.10.212	IN	PTR	mozzo.dmz.naufragioline.it.			# Mail Server
 4.6.10.212	IN	PTR	ammiraglio.dmz.naufragioline.it.		# web Server
 5.6.10.212	IN	PTR	filibustiere.dmz.naufragioline.it.		# proxy Server
-30.6.10.212 	IN	PTR	effemeridi.dmz.naufragioline.it.		# DNS Server E
-20.6.10.212	IN	PTR	embargo.dmz.naufragioline.it.			# Backup Server
 
 3.113.168.192 	IN	PTR	host_1.carena1.naufragioline.it.		# Host 1
 ...

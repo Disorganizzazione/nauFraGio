@@ -13,6 +13,7 @@ IN MX 10 mozzo.carena.naufragioline.it
 
 ; Definizione host
 202.101.168.192 IN	PTR	approdo.ancora.naufragioline.it			# Router
+211.101.168.192 IN	PTR	embargo.ancora.naufragioline.it			# backup
 
 2				IN	PTR	host_1.approdo.ancora.naufragioline.it. # Host 1
 ...
