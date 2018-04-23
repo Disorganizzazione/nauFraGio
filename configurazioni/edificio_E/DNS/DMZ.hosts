@@ -17,10 +17,10 @@ www			IN	 CNAME	ammiraglio		# Alias del Server Web
 mozzo			IN   	 A 		212.10.6.2	# Server Mail
 mail			IN	 CNAME	mozzo			# Alias del Server Mail
 filibustiere		IN	 A		212.10.6.5	# Server Proxy
-dns			IN	 CNAME 	effemeridi: 		# Alias del Server DNS
+dns			IN	 CNAME 	filibustiere: 		# Alias del Server Proxy
 
 ;Definizione host E
-effemeridi		IN	A		212.10.6.30 	# Server DNS
-embargo			IN	A		212.10.6.20 	# Server Bake up
+effemeridi		IN	A		192.168.105.210 # Server DNS
+dns			IN	CNAME 	effemeridi: 		# Alias del Server DNS
 
 ;#
