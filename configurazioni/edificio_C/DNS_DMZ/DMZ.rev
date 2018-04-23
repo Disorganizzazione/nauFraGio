@@ -1,5 +1,5 @@
 $TTL 86400
-@	IN	SOA	effemeridi.naufragioline.it	admin.naufragioline.it (
+@	IN	SOA	effemeridi.dmz.naufragioline.it	admin.naufragioline.it (
 	2018162002	;Serial
 	36000      	;Refresh
 	3600		;Retry
@@ -7,17 +7,13 @@ $TTL 86400
 	36000		;Minimum
 )
 
-; Definizione dei server DNS e mail
-IN NS    effemeridi.naufragioline.it
-IN MX 10 	mozzo.naufragioline.it
+IN NS    effemeridi.dmz.naufragioline.it
+IN MX 10 	mozzo.dmz.naufragioline.it
 
 ; Definizione sottorete DMZ edificio C
-2.6		IN	PTR	mozzo.naufragioline.it.			# Server Mail
-4.6		IN	PTR	ammiraglio.naufragioline.it.		# Server Web
-5.6		IN	PTR	filibustiere.naufragioline.it.		# Server Proxy
-
-; Definizioni sottorete DMZ edificio E
-210.105.168.192	IN	PTR	effemeridi.naufragioline.it.		# Server DNS
-
+2.6		IN	PTR	mozzo.dmz.naufragioline.it.				# Server Mail
+4.6		IN	PTR	ammiraglio.dmz.naufragioline.it.		# Server Web
+5.6		IN	PTR	filibustiere.dmz.naufragioline.it.		# Server Proxy
+3.6		IN	PTR	effemeridi.dmz.naufragioline.it.		# Server DNS
 
 ;# 
