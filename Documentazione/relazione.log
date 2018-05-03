@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Arch Linux) (preloaded format=pdflatex 2018.4.18)  21 APR 2018 18:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Arch Linux) (preloaded format=pdflatex 2018.4.18)  23 APR 2018 18:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -743,44 +743,49 @@ Underfull \hbox (badness 10000) in paragraph at lines 40--57
  []
 
 [3 <../Immagini/mappa.png>]
-<../Immagini/schema_logico.png, id=97, 4445.60875pt x 2542.49875pt>
+<../Immagini/schema_logico.png, id=97, 1927.2pt x 1084.05pt>
 File: ../Immagini/schema_logico.png Graphic file (type png)
 <use ../Immagini/schema_logico.png>
 Package pdftex.def Info: ../Immagini/schema_logico.png  used on input line 61.
-(pdftex.def)             Requested size: 444.58693pt x 254.26477pt.
+(pdftex.def)             Requested size: 481.79883pt x 271.01184pt.
+
+Overfull \hbox (4.90195pt too wide) in paragraph at lines 61--61
+ [][] 
+ []
+
 
 Underfull \hbox (badness 10000) in paragraph at lines 60--61
 
  []
 
 [4 <../Immagini/schema_logico.png>]
-<../Immagini/ancora.png, id=104, 1268.48906pt x 746.03719pt>
+<../Immagini/ancora.png, id=104, 1264.725pt x 721.69624pt>
 File: ../Immagini/ancora.png Graphic file (type png)
 <use ../Immagini/ancora.png>
 Package pdftex.def Info: ../Immagini/ancora.png  used on input line 66.
-(pdftex.def)             Requested size: 342.49663pt x 201.43272pt.
-<../Immagini/babordo.png, id=105, 1269.99469pt x 744.53156pt>
+(pdftex.def)             Requested size: 341.48032pt x 194.86058pt.
+<../Immagini/babordo.png, id=105, 1264.725pt x 721.69624pt>
 File: ../Immagini/babordo.png Graphic file (type png)
 <use ../Immagini/babordo.png>
 Package pdftex.def Info: ../Immagini/babordo.png  used on input line 69.
-(pdftex.def)             Requested size: 381.00134pt x 223.36119pt.
-<../Immagini/carena.png, id=106, 1272.25313pt x 746.03719pt>
+(pdftex.def)             Requested size: 379.42043pt x 216.51054pt.
+<../Immagini/carena.png, id=106, 1264.725pt x 721.69624pt>
 File: ../Immagini/carena.png Graphic file (type png)
 <use ../Immagini/carena.png>
 Package pdftex.def Info: ../Immagini/carena.png  used on input line 72.
-(pdftex.def)             Requested size: 445.29527pt x 261.11691pt.
+(pdftex.def)             Requested size: 442.66039pt x 252.59747pt.
  [5 <../Immagini/ancora.png> <../Immagini/babordo.png>] [6 <../Immagini/carena.
 png>]
-<../Immagini/dritta.png, id=121, 1267.73625pt x 743.77875pt>
+<../Immagini/dritta.png, id=121, 1264.725pt x 721.69624pt>
 File: ../Immagini/dritta.png Graphic file (type png)
 <use ../Immagini/dritta.png>
 Package pdftex.def Info: ../Immagini/dritta.png  used on input line 76.
-(pdftex.def)             Requested size: 316.93329pt x 185.94423pt.
-<../Immagini/esule.png, id=122, 1273.00594pt x 746.79pt>
+(pdftex.def)             Requested size: 316.18048pt x 180.42361pt.
+<../Immagini/esule.png, id=122, 1264.725pt x 721.69624pt>
 File: ../Immagini/esule.png Graphic file (type png)
 <use ../Immagini/esule.png>
 Package pdftex.def Info: ../Immagini/esule.png  used on input line 79.
-(pdftex.def)             Requested size: 318.2507pt x 186.69704pt.
+(pdftex.def)             Requested size: 316.18048pt x 180.42361pt.
  [7 <../Immagini/dritta.png> <../Immagini/esule.png>]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 112.
  [8]
@@ -804,7 +809,7 @@ texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/font
 s/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/
 amsfonts/cm/cmssbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/
 cmtt10.pfb>
-Output written on relazione.pdf (8 pages, 1074737 bytes).
+Output written on relazione.pdf (8 pages, 502790 bytes).
 PDF statistics:
  166 PDF objects out of 1000 (max. 8388607)
  135 compressed objects within 2 object streams
