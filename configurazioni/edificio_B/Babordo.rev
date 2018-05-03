@@ -11,9 +11,10 @@ $TTL 86400
 IN NS 	capitano.carena.naufragioline.it  
 IN MX 10 mozzo.carena.naufragioline.it  
 
-; Definizione host
 202 IN	PTR	banchina.babordo.naufragioline.it.			# Router
+210 IN	PTR	bucaniere.babordo.naufragioline.it.			# App aziendali
 
+; Definizione host
 2	IN	PTR	host_1.banchina.babordo.naufragioline.it.	# Host 1
 ...
-101 IN  PTR host_100.banchina.babordo.naufragioline.it.	# Host 100
+101 IN  PTR host_100.banchina.babordo.naufragioline.it.	# Host 100	# Host 100
