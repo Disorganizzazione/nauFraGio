@@ -11,9 +11,10 @@ $TTL 86400
 IN NS 	capitano.carena.naufragioline.it
 IN MX 10 mozzo.carena.naufragioline.it
 
-; Definizione host
 banchina IN A 192.168.102.202 		# Router
+bucaniere IN A 192.168.102.210 		# App aziendali
 
+; Definizione host
 host_1    	IN	A	192.168.2.2    	# Host 1
 ...
 host_100 	IN 	A	192.168.2.101	# Host 100
