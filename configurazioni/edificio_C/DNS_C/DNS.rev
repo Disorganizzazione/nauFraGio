@@ -1,0 +1,40 @@
+$TTL 86400
+@	IN	SOA	capitano.naufragioline.it	admin.naufragioline.it (
+	2018162002	;Serial
+	36000      	;Refresh
+	3600		;Retry
+	3600000		;Expire
+	36000		;Minimum
+)
+
+; Definizione dei server DNS e mail
+IN NS    capitano.naufragioline.it
+IN MX 10 	mozzo.naufragioline.it
+
+210.103.168.192 IN	PTR	capitano.carena.naufragioline.it.		# Server DNS
+3.6.10.212 IN	PTR	effemeridi.dmz.naufragioline.it.			# Server DNS DMZ
+
+;A
+202.101.168.192 IN	PTR	approdo.ancora.naufragioline.it.		#
+211.101.168.192 IN	PTR	embargo.ancora.naufragioline.it.		# backup
+;B
+202.102.168.192 IN	PTR	banchina.babordo.naufragioline.it.		#
+210.102.168.192 IN	PTR	bucaniere.babordo.naufragioline.it.		# app
+;C
+202.103.168.192 IN	PTR	controfiocco.carena.naufragioline.it.	#
+;D
+202.104.168.192 IN	PTR	deriva.dritta.naufragioline.it.			#
+205.104.168.192 IN	PTR	nostromo.dritta.naufragioline.it.		# dhcp
+;E
+202.105.168.192 IN	PTR	ecoscandaglio.esule.naufragioline.it.	#
+
+; host sub1
+3.113.168.192 	IN	PTR	host_1.carena1.naufragioline.it.		# Host 1
+...
+132.113.168.192 IN	PTR host_130.carena1.naufragioline.it.		# Host 130
+; host sub2
+3.123.168.192	IN	PTR	host_131.carena2.naufragioline.it.		# Host 131
+...
+132.123.168.192 IN	PTR host_260.carena2.naufragioline.it.		# Host 260
+
+;# 

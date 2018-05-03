@@ -1,0 +1,46 @@
+$TTL 86400
+@	       IN	SOA	       capitano.naufragioline.it	admin.naufragioline.it (
+	2018162002	;Serial
+	36000       	;Refresh
+	3600		;Retry
+	3600000		;Expire
+	36000		;Minimum
+)
+
+; Definizione dei server DNS e mail
+IN    NS    capitano.naufragioline.it
+IN MX 10 mozzo.naufragioline.it
+
+; Definizione host C
+capitano		IN	 A		192.168.103.210	# Server DNS
+dns				IN	 CNAME 	capitano 		# Alias del Server DNS
+effemeridi		IN	 A		212.10.6.3	# Server DNS
+dns2			IN	 CNAME 	effemeridi 	# Alias del Server DNS
+
+;A
+approdo		IN	 A		192.168.101.202	#
+embargo		IN	 A		192.168.101.211	# backup
+backup		IN	 CNAME 	embargo 		# alias backup
+;B
+banchina		IN	 A		192.168.102.202	#
+bucaniere		IN	 A		192.168.102.210	# app
+appl			IN	 CNAME 	bucaniere 		# alias app
+;C
+controfiocco	IN	 A		192.168.103.202	#
+;D
+deriva			IN	 A		192.168.104.202	#
+nostromo		IN	 A		192.168.104.205	# dhcp
+dhcp			IN	 CNAME 	nostromo 		# alias dhcp
+;E
+ecoscandaglio	IN	 A		192.168.105.202	#
+
+; host sub1
+host_1        IN A 192.168.113.3     # Host 1
+...
+host_130      IN A 192.168.113.132   # Host 130
+; host sub2
+host_131      IN A 192.168.123.3    # Host 131
+...
+host_260      IN A 192.168.123.132  # Host 260
+
+;#
