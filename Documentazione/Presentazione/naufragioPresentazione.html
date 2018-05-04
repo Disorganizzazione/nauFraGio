@@ -9,12 +9,12 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>naufragiolinePresentazione</title>
+<title>naufragioPresentazione</title>
 <!-- write your code here -->
 
 
 <script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
-<script src="naufragiolinePresentazione.js"></script>
+<script src="naufragioPresentazione.js"></script>
 <script>
 var canvas, stage, exportRoot;
 function init() {
@@ -27,7 +27,7 @@ function init() {
 	var loader = new createjs.LoadQueue(false);
 	loader.addEventListener("fileload", handleFileLoad);
 	loader.addEventListener("complete", handleComplete);
-	loader.loadFile({src:"images/naufragiolinePresentazione_atlas_.json", type:"spritesheet", id:"naufragiolinePresentazione_atlas_"}, true);
+	loader.loadFile({src:"images/naufragioPresentazione_atlas_.json", type:"spritesheet", id:"naufragioPresentazione_atlas_"}, true);
 	loader.loadManifest(lib.properties.manifest);
 }
 
@@ -37,8 +37,8 @@ function handleFileLoad(evt) {
 
 function handleComplete(evt) {
 	var queue = evt.target;
-	ss["naufragiolinePresentazione_atlas_"] = queue.getResult("naufragiolinePresentazione_atlas_");
-	exportRoot = new lib.naufragiopresentazione05final();
+	ss["naufragioPresentazione_atlas_"] = queue.getResult("naufragioPresentazione_atlas_");
+	exportRoot = new lib.naufragiopresentazione08panic();
 
 	stage = new createjs.Stage(canvas);
 	stage.addChild(exportRoot);
